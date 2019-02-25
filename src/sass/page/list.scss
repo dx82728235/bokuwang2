@@ -1,0 +1,115 @@
+@charset "utf-8";
+@import "../common/reset.scss";
+
+
+#main {
+    overflow: hidden;
+    .rank-banner {
+        height: 80px;
+        background-color: #e8e8e8;
+    }
+
+    .rank-filter {
+        border: 1px #e8e8e8 solid;
+        background-color: #f3f3f3;
+
+        .fliter-box {
+            li a {
+                padding: 0px 16px;
+                margin: 4px 5px;
+                line-height: 28px;
+                text-align: center;
+                border: 1px #e8e8e8 solid;
+            }
+        }
+    }
+
+    .PageCode {
+        padding: 15px 0 15px 20px;
+        color: #333;
+        text-align: right;
+        background-color: #fff;
+
+        .disabled {
+
+            display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            padding: 0 10px;
+            margin: 0 6px;
+            color: #999;
+            background: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            vertical-align: middle;
+
+        }
+
+        .current {
+            display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            padding: 0 10px;
+            margin: 0 6px;
+            color: #fff;
+            background-color: #2db4ea;
+            border: 1px solid #2db4ea;
+            border-radius: 4px;
+        }
+
+        .span {
+            display: inline-block;
+            color: #333;
+            height: 25px;
+            line-height: 25px;
+            padding: 0 10px;
+            border: 1px solid #e8e8e8;
+            margin: 0 6px;
+            border-radius: 2px;
+        }
+
+        .next {
+            display: inline-block;
+            color: #333;
+            height: 25px;
+            line-height: 25px;
+            padding: 0 10px;
+            border: 1px solid #e8e8e8;
+            margin: 0 6px;
+            border-radius: 2px;
+            vertical-align: middle;
+        }
+
+        a:hover {
+            text-decoration: none;
+            border: 1px solid #2db4ea;
+            color: #fff;
+            background-color: #2db4ea;
+        }
+    }
+
+    .list-box {
+        .good-box {
+            .good-count{
+                position: absolute;
+                display: block;
+                width: 30px;
+                text-align: center;
+                z-index: 2;
+                top: 14px;
+                left: 7px;
+                font-size: 16px;
+            }
+            .good-pic {
+                img {
+                    width: 214px;
+                    height: 214px;
+                    transition: all 0.5s ease 0s;
+                }
+                img:hover{
+                    transform:scale(1.1);
+                }
+            }
+        }
+    }
+}

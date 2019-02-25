@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+
+fieldset, c{ border:none; }
+
+img{display: block;}
+
+address, caption, cite, code, dfn, th, var, em { font-style:normal; font-weight:normal; }
+
+ul, ol ,li{ list-style:none; }
+
+body { color:#212121; font:14px "微软雅黑", "黑体", "Microsoft YaHei", "SimSun", Helvetica, Arial, sans-serif; background:#fff;}
+
+a { color:#666; text-decoration:none; }
+/*清除浮动*/
+.clear{clear:both}
+*{box-sizing:border-box}
+
+body{
+   height: 100%;
+}
+
+input {
+    outline: none;
+}
+
+@mixin pub($w,$h,$b:white){
+    width: $w;
+    height: $h;
+    background: $b;
+}
+
+@mixin aFont($s,$c){
+    font-size: $s;
+    color: $c;                                                     
+}
+
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+      url('iconfont.woff2') format('woff2'),
+      url('iconfont.woff') format('woff'),
+      url('iconfont.ttf') format('truetype'),
+      url('iconfont.svg#iconfont') format('svg');
+}
+

@@ -1,0 +1,245 @@
+@charset "utf-8";
+@import "../common/reset.scss";
+
+
+//头部  导航栏 logo 搜索框 购物车按钮
+#head {
+    height: 190px;
+    border-bottom: 2px #3ab5e6 solid;
+    position: relative;
+    z-index: 102;
+
+    //导航栏
+    .header {
+        @include pub(100%, 30px, #f5f5f5);
+        @include aFont(12px, #666);
+
+        .head-left {
+            float: left;
+            display: flex;
+            line-height: 30px;
+
+            .userInfo {
+                margin-right: 30px;
+
+                span {
+                    padding: 0 5px;
+                }
+            }
+
+            .downapp {
+
+                .icon-phone,
+                .down-click {
+                    float: left;
+                }
+
+                .icon-phone {
+                    color: #2db4ea;
+                }
+            }
+        }
+
+        .head-right {
+            float: right;
+            line-height: 30px;
+
+            div {
+                float: left;
+
+                .icon-nav {
+                    margin-left: 5px;
+                }
+            }
+
+            ul {
+                float: left;
+                display: flex;
+
+                span {
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+
+    //头部 中间部分
+    .head-center {
+        height: 118px;
+        padding-top: 30px;
+        position: relative;
+
+        .logo-box {
+            width: 325px;
+            height: 90px;
+            float: left;
+
+            img {
+                border: none;
+                max-width: 100%;
+            }
+        }
+
+        .search {
+            float: left;
+            width: 550px;
+            height: 35px;
+            line-height: 35px;
+            border: 2px #2db4ea solid;
+            position: relative;
+
+            .search-box {
+                width: 460px;
+                height: 31px;
+                padding: 0 10px;
+                line-height: 35px;
+                font-size: 16px;
+                display: block;
+                outline: none;
+                border: none;
+
+            }
+
+            .search-info {
+                height: 5px;
+            }
+
+            .search-pic {
+                width: 70px;
+                height: 100%;
+                background-color: #2db4ea;
+                line-height: 35px;
+                color: #fff;
+                text-align: center;
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            ul {
+                display: flex;
+
+                span {
+                    padding: 0 5px;
+                }
+            }
+        }
+
+        .shopcar-btn {
+            float: right;
+            margin-top: 8px;
+            text-align: right;
+            line-height: 1.5;
+            color: #212121;
+            padding: 6px 10px;
+            border: 1px #ddd solid;
+            border-radius: 4px;
+
+            a {
+                .cl-a9 {
+                    color: #a9a9a9;
+                }
+            }
+        }
+    }
+
+    .navs {
+        position: absolute;
+
+        .navs-titile {
+            @include pub(200px, 40px, #3ab5e6);
+            line-height: 40px;
+            a{
+                padding-left: 30px;
+            }
+        }
+
+        .nav-list {
+            line-height: 40px;
+            padding-left: 30px;
+            font-size: 16px;
+
+            ul {
+                li {
+                    padding: 0 15px;
+
+                    a {
+                        color: #212121;
+                    }
+                }
+
+                span {
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}
+
+#banner {
+        position: relative;
+        z-index: 11;
+        height: 400px;
+        cursor: pointer;
+    .menu {
+        width: 200px;
+        height: 400px;
+        background-color: rgba(76,76,76,.8);
+        position: absolute;
+        z-index: 101;
+        top: 0;
+        left: 50%;
+        margin-left: -600px;
+        .mouseenter{
+            line-height: 40px;
+            text-align: center;
+            .books-title{
+                a{
+                    color: #212121;
+                }
+            }
+        }
+        .navTop-title{
+            a{
+                background-color: #2ab4e8;
+                padding: 0 5px;
+            }
+        }
+
+        ul {
+            position: absolute;
+            top: 0;
+            left: 200px;
+            z-index: 10;
+            width: 760px;
+            min-height: 380px;
+            padding: 10px 20px;
+            border: 2px white solid;
+            margin-top: -1px;
+            box-shadow: 1px 1px 6px rgba(0, 0, 0, .1);
+            background-color: #fff;
+            display: none;
+            line-height: 20px;
+            li{
+                padding: 5px 0;
+                border-bottom: 1px #eee dashed;
+                a{
+                    color: #212121;
+                }
+            }
+        }
+    }
+    #banner-box{
+        .swiper-pagination-bullet{
+            width: 14px;
+            height: 14px;
+            background: rgba(255,255,255,0);
+            border: 2px #fff solid;
+        }
+    }
+}
+
+
+
+

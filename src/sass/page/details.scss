@@ -1,0 +1,67 @@
+#main {
+    overflow: hidden;
+
+    .action-top {
+        justify-content: space-around;
+
+        .action-pic {
+            .action-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 21;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                line-height: 50px;
+            }
+        }
+
+
+        .count-box {
+
+            width: 114px;
+            height: 28px;
+            line-height: 28px;
+            border: 1px #ddd solid;
+
+                .count-sub {
+                width: 28px;
+                height: 28px;
+                border-right: 1px #ddd solid;
+                text-align: center;
+                color: #696967;
+                font-size: 25px;
+                cursor: pointer;
+                user-select: none;
+            }
+            .count-add {
+                width: 28px;
+                height: 28px;
+                border-left: 1px #ddd solid;
+                text-align: center;
+                color: #696967;
+                font-size: 22px;
+                cursor: pointer;
+                user-select: none;
+            }
+        }
+
+        .count-box input {
+            width: 56px;
+            height: 26px;
+            font-size: 16px;
+            color: #212121;
+            text-align: center;
+            line-height: 28px;
+            border: none;
+        }
+        .action-title {
+            padding: 15px 8px;
+            font-size: 16px;
+            line-height: 70px;
+            border: 1px #e8e8e8 solid;
+        }
+    }
+
+}

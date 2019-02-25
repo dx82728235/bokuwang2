@@ -1,0 +1,22 @@
+#foot .foot-top {
+  padding: 20px;
+  height: 100px;
+  border-bottom: 1px #e1e1e1 solid;
+  border-top: 1px #e1e1e1 solid; }
+  #foot .foot-top ul {
+    padding: 0 50px;
+    width: 1100px;
+    margin: 0 auto; }
+#foot .foot-center {
+  padding: 20px 0; }
+  #foot .foot-center ul .foot-info a {
+    font-size: 14px; }
+  #foot .foot-center ul .foot-info div:first-child a {
+    font-size: 16px;
+    color: #212121; }
+#foot .foot-bottom {
+  height: 90px;
+  padding: 20px 0;
+  background-color: #414141; }
+
+/*# sourceMappingURL=footer.css.map */
