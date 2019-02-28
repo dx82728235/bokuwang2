@@ -1,0 +1,61 @@
+#main{
+    table{
+        
+        .thead-1 {
+            background-color: #f3f3f3;
+            border: 1px #e8e8e8 solid;
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+        }
+    }
+    table, td, thead, tbody, th, tfoot {
+        padding: 0;
+        border-collapse: collapse;
+    }
+    .count-box {
+        width: 114px;
+        height: 28px;
+        line-height: 28px;
+        border: 1px #ddd solid;
+        .count-sub {
+            width: 28px;
+            height: 28px;
+            border-right: 1px #ddd solid;
+            text-align: center;
+            color: #696967;
+            font-size: 25px;
+            cursor: pointer;
+            user-select: none;
+        }
+        input {
+            width: 56px;
+            height: 23px;
+            font-size: 16px;
+            color: #212121;
+            text-align: center;
+            line-height: 28px;
+            border: none;
+        }
+        .count-add {
+            width: 28px;
+            height: 28px;
+            border-left: 1px #ddd solid;
+            text-align: center;
+            color: #696967;
+            font-size: 22px;
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+    tfoot {
+
+        background-color: #f3f3f3;
+        border: 1px #e8e8e8 solid;
+        height: 80px;
+        line-height: 80px;
+        font-size: 16px;
+        margin-top: 10px;
+    
+    }
+}

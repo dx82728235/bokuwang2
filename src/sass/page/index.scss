@@ -150,7 +150,8 @@
         .navs-titile {
             @include pub(200px, 40px, #3ab5e6);
             line-height: 40px;
-            a{
+
+            a {
                 padding-left: 30px;
             }
         }
@@ -178,68 +179,17 @@
 }
 
 #banner {
-        position: relative;
-        z-index: 11;
-        height: 400px;
-        cursor: pointer;
-    .menu {
-        width: 200px;
-        height: 400px;
-        background-color: rgba(76,76,76,.8);
-        position: absolute;
-        z-index: 101;
-        top: 0;
-        left: 50%;
-        margin-left: -600px;
-        .mouseenter{
-            line-height: 40px;
-            text-align: center;
-            .books-title{
-                a{
-                    color: #212121;
-                }
-            }
-        }
-        .navTop-title{
-            a{
-                background-color: #2ab4e8;
-                padding: 0 5px;
-            }
-        }
+    position: relative;
+    z-index: 11;
+    height: 400px;
+    cursor: pointer;
 
-        ul {
-            position: absolute;
-            top: 0;
-            left: 200px;
-            z-index: 10;
-            width: 760px;
-            min-height: 380px;
-            padding: 10px 20px;
-            border: 2px white solid;
-            margin-top: -1px;
-            box-shadow: 1px 1px 6px rgba(0, 0, 0, .1);
-            background-color: #fff;
-            display: none;
-            line-height: 20px;
-            li{
-                padding: 5px 0;
-                border-bottom: 1px #eee dashed;
-                a{
-                    color: #212121;
-                }
-            }
-        }
-    }
-    #banner-box{
-        .swiper-pagination-bullet{
+    #banner-box {
+        .swiper-pagination-bullet {
             width: 14px;
             height: 14px;
-            background: rgba(255,255,255,0);
+            background: rgba(255, 255, 255, 0);
             border: 2px #fff solid;
         }
     }
 }
-
-
-
-

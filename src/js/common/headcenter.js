@@ -5,27 +5,7 @@ function HeadCenter(container){
 
 HeadCenter.template = `<div class="w1200">
                             <div class="head-center">
-                                <div class="logo-box">
-                                    <a href="#"><img src="../../dest/img/index/logo.png" alt="logo"></a>
-                                </div>
-                                <div class="search">
-                                    <input type="text" placeholder="刘慈欣" class="search-box"><span class="fs-27 search-pic iconfont">&#xe62b;</span>
-                                    <p class="search-info">
-                                        <ul class="lh-25 fs-12" id="search-books">
-                                            <li><a href="#">茅台酒收藏</a><span>|</span></li>
-                                            <li><a href="#" class="cl-9">夏摩山谷</a><span>|</span></li>
-                                            <li><a href="#" class="cl-9">崔永元 有话说</a><span>|</span></li>
-                                            <li><a href="#" class="cl-9">林清玄</a><span>|</span></li>
-                                            <li><a href="#" class="cl-9">邓小平大决策</a></li>
-                                        </ul>
-                                    </p>
-                                </div>
-                                <div class="shopcar-btn">
-                                    <a href="#">
-                                        <span class="iconfont fs-18 cl-a9">&#xe64f;</span>
-                                        <span>购物车</span>
-                                    </a>
-                                </div>
+                                
                             </div>
                             <div class="navs dis-fl">
                                 <div class="navs-titile .fl"><a href="#" class="cl-f db"><span class="iconfont mr-10">&#xe606;</span>所有商品分类</a></div>
@@ -56,6 +36,8 @@ HeadCenter.prototype = {
         this.el = $("<div></div>");
         this.el.append(HeadCenter.template);
         this.container.append(this.el);
+        //logo  搜索  购物车 吸顶效果
+        this.mounting = new Mounting(this.el.find('.head-center'));
     },
     handleHover : function(){
         this.container.find('.shopcar-btn').hover(function(){

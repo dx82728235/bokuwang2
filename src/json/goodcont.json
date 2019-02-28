@@ -1,40 +1,53 @@
 {
     "classify001":{
+        "id" : "shop01",
         "bookpic":"https://wdimg3.bookuu.com/goods/20/06/39/2375506.jpg@!w350",
         "name":"我们仨",
+        "abstract":"致敬杨绛先生，民国大师经典作品，讲述“我们仨”",
         "author":"作者:杨绛",
         "money":"17.25",
         "nomoney":"23.00",
-        "sum":"535470"
+        "sum":"535470",
+        "banner": "https://bnmppic.bookuu.com/topic/20161222/1482371105712256.jpg"
     },
     "classify002":{
+        "id" : "shop02",
         "bookpic":"https://wdimg3.bookuu.com/goods/20/06/23/2353163.jpg@!w350",
         "name":"活着/余华作品",
         "author":"作者:余华",
+        "abstract":"余华经典著作，以一种渗透的表现手法完成了一次对生命意义的哲学追问 ",
         "money":"10.00",
         "nomoney":"20.00",
-        "sum":"417650"
+        "sum":"417650",
+        "banner": "https://bnmppic.bookuu.com/topic/20170811/1502421650500264.jpg"
     },
     "classify003":{
+        "id" : "shop03",
         "bookpic":"https://wdimg3.bookuu.com/goods/20/06/24/2282203.jpg@!w350",
         "name":"偷影子的人",
+        "abstract":"这就是你在我生命里的角色，我童年时的小女孩，**蜕变成了女人，一段青梅竹马的回忆，一个时间之神没有应允的愿望",
         "author":"作者:(法)马克·李维|译者:段韵灵",
         "money":"22.05",
         "nomoney":"29.80",
-        "sum":"371639"
+        "sum":"371639",
+        "banner": "https://bnmppic.bookuu.com/topic/20160805/1470360179730956.jpg"
     },
     "classify004":{
+        "id" : "shop04",
         "bookpic":"https://wdimg3.bookuu.com/goods/10/16/22/1495764982.jpg@!w350",
         "name":"【预售】三体",
+        "abstract":"刘慈欣代表作，亚洲首部“雨果奖”获奖作品！中国科幻划时代著作，连续八年获得中国科幻银河奖。",
         "author":"作者:刘慈欣|主编:姚海军",
         "money":"46.50 ",
         "nomoney":"93.00",
-        "sum":"352044"
+        "sum":"352044",
+        "banner": "https://bnmppic.bookuu.com/topic/20170612/1497262343615422.jpg"
     },
     "classify005":{
         "bookpic":"https://wdimg3.bookuu.com/goods/20/15/46/1608336.jpg@!w350",
         "name":"狼王梦/动物小说大王",
         "author":"作者:沈石溪",
+        "abstract":"本书写的是一匹充满智慧的狼，用一生的时间来完成自己的梦想。丈夫没了，还有儿子，儿子没了，还有女儿。为了那梦寐以求的狼王宝座，它浪",
         "money":"11.80",
         "nomoney":"18.00",
         "sum":"335708"
@@ -42,6 +55,7 @@
     "classify006":{
         "bookpic":"https://wdimg3.bookuu.com/goods/20/04/51/3269543.jpg@!w350",
         "name":"我不喜欢这世界我只喜欢你(精)",
+        "abstract":"真实恋爱成长回忆录，从校服到婚纱，爱让我们成为*好的人。",
         "author":"作者:乔一",
         "money":"20.00",
         "nomoney":"29.80",
@@ -50,6 +64,7 @@
     "classify007":{
         "bookpic":"https://wdimg3.bookuu.com/goods/19/01/46/1971599.jpg@!w350",
         "name":"父与子全集(彩色双语版)",
+        "abstract":"根据《父与子全集》的漫画而编，全书采用中英对照的方式，力求原汁原味、妙趣横生地表达父子间的亲情与淳朴的天性，让读者既能*好的理解漫",
         "author":"作者:译者:莫兰|绘画:(德)埃·奥·卜劳恩",
         "money":"11.90 ",
         "nomoney":"29.00",
@@ -58,6 +73,7 @@
     "classify008":{
         "bookpic":"https://wdimg3.bookuu.com/goods/18/58/18/2946498.jpg@!w350",
         "name":"夏洛的网",
+        "abstract":"E·B·怀特讲述了这个很有哲理意义的故事，关于爱，关于友情，关于生死……",
         "author":"作者:(美)E·B·怀特|译者:任溶溶",
         "money":"17.20",
         "nomoney":"26.00",
@@ -66,6 +82,7 @@
     "classify009":{
         "bookpic":"https://wdimg3.bookuu.com/goods/19/25/15/3392507.jpg@!w350",
         "name":"天才在左疯子在右(完整版)",
+        "abstract":"看高智商疯子如何调戏和羞辱正常人！",
         "author":"作者:高铭",
         "money":"27.47",
         "nomoney":"39.80",
@@ -74,6 +91,7 @@
     "classify010":{
         "bookpic":"https://wdimg3.bookuu.com/goods/20/04/41/3211727.jpg@!w350",
         "name":"中华上下五千年(共4册)",
+        "abstract":"7-15岁，Q版漫画与经典故事融合，集趣味性和启发性于一体，让孩子在“悦读”中感受历史的魅力",
         "author":"作者:编者:木头人儿童创想中心",
         "money":"32.50",
         "nomoney":"92.00",
@@ -82,6 +100,7 @@
     "classify011":{
         "bookpic":"https://wdimg3.bookuu.com/goods/19/01/47/1628401.jpg@!w350",
         "name":"长袜子皮皮",
+        "abstract":"**安徒生金质奖章获得者，瑞士童话大师林格伦经典作品，长袜子皮皮",
         "author":"作者:(瑞典)阿斯特丽德·林格伦",
         "money":"14.40",
         "nomoney":"18.00",
@@ -90,6 +109,7 @@
     "classify012":{
         "bookpic":"https://wdimg3.bookuu.com/goods/20/01/02/3057500.jpg@!w350",
         "name":"皮囊(精)",
+        "abstract":"韩寒特别监制，刘德华、李敬泽亲笔作序。",
         "author":"作者:蔡崇达",
         "money":"19.90",
         "nomoney":"39.80",
@@ -98,6 +118,7 @@
     "classify013":{
         "bookpic":"https://wdimg3.bookuu.com/goods/19/46/46/2417879.jpg@!w350",
         "name":"看见",
+        "abstract":"雾霾调查纪录片《穹顶之下》制作人 柴静：十年个人成长的告白",
         "author":"作者:柴静",
         "money":"31.84",
         "nomoney":"39.80",
@@ -106,6 +127,7 @@
     "classify014":{
         "bookpic":"https://wdimg3.bookuu.com/goods/18/58/21/3006051.jpg@!w350",
         "name":"乖摸摸头",
+        "abstract":"**畅销书作者大冰新作！上市12天，突破10万册！不要那么孤独，请相信世界上真的有人在过着你想要的生活！",
         "author":"作者:大冰|摄影:梁博",
         "money":"24.80",
         "nomoney":"36.00",

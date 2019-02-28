@@ -69,6 +69,7 @@ Main.prototype = {
     init : function(){
         this.createDom();
         this.getJson();
+        this.addCart();
     },
     createDom : function(){
         this.el = $('<div></div>');
@@ -78,7 +79,7 @@ Main.prototype = {
     getJson : function(){
         var deff = $.ajax({
             type:'get',
-            url:'../json/goodcont.json'
+            url:'../json/goodcont.json?id='+Math.random()
         })
         deff.done(function(msg){
             var goodCon = '';
@@ -88,6 +89,7 @@ Main.prototype = {
                 goodCon += `
                             <div class="good-box bd-1-e8 pd-1900 wd-485 ht-242 pr ma-2 fl">
                                 <span class="good-count">${index}</span>
+                                <a href='details.html?pid=${msg[attr].id}&cname=${attr}'>
                                 <div class="good-pic fl br-1-e8">
                                     <img src="${msg[attr].bookpic}" alt="" class="ma db">
                                 </div>
@@ -107,7 +109,7 @@ Main.prototype = {
                                         </p>
                                     </div>
                                     <div class="mt-15 ht-38 lh-35 ">
-                                        <a href="##" class="mr-20 bc-bl db fl wd-113 cl-f ta-ct">
+                                        <a href="##" data-pid=${msg[attr].id} data-pname=${msg[attr].name} data-bookpic=${msg[attr].bookpic} data-money=${msg[attr].money} data-nomoney=${msg[attr].nomoney} class="add-cart mr-20 bc-bl db fl wd-113 cl-f ta-ct">
                                             <span class="iconfont">&#xe64f; </span>加入购物车
                                         </a>
                                         <a href="##" class="fl db wd-70 ta-ct bd-1-c">
@@ -120,5 +122,42 @@ Main.prototype = {
             }
             this.el.find(".list-box").html(goodCon);
         }.bind(this))
+    },
+    addCart : function(){ //加入购物车功能
+        var arr = [];
+        this.el.on('click',".add-cart",function(){
+            var json = {};
+            json = {
+                "id" : $(this).data("pid"),
+                "name" : $(this).data('pname'),
+                'bookpic' : $(this).data('bookpic'),
+                'money' : $(this).data('money'),
+                'nomoney' : $(this).data('nomoney'),
+                'count' : 1
+            }
+            var flag = true;//假设值为true时 可以向数组中push对象
+
+            var brr = getCookie('shoplist');
+            if( brr.length > 0 ){
+                //将取出来的cookie数据存入到arr中 因为最终是要将arr数据存入到cookie中
+                arr = brr;
+                //判断当前的json对象的id值是否和arr中某个对象的id相等
+                for( var i = 0 ; i < arr.length ; i ++ ){
+                    if( arr[i].id == json.id ){// 说明当前选择的商品在cookie中是存在的
+                        arr[i].count++;
+                        flag = false;
+                        break;
+
+                    }
+                }
+            }
+            if( flag ){
+                //将对象添加到数组中
+                arr.push( json );
+            }
+            //将数组存入到cookie中
+            setCookie( "shoplist" , JSON.stringify( arr ) );//cookie中存入的都是字符串
+
+        })
     }
 }

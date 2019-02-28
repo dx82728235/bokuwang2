@@ -14,7 +14,7 @@ Page.prototype = {
         this.header = new Header(this.head);
         this.headCenter = new HeadCenter(this.head);
         this.secondMenu = new SecondMenu(this.main);
-
+        this.mains = new Main(this.main);
         this.footTop = new FootTop(this.foot);
         this.footCenter = new FootCenter(this.foot);
         this.footBottom = new FootBottom(this.foot);

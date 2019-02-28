@@ -13,7 +13,7 @@
 
 //排版
 .w1200{
-    width: 1200px;
+    width: 1200px !important;
     margin: 0 auto;
 }
 
@@ -24,11 +24,20 @@
 .fs-14 {
     font-size: 14px;
 }
+.fs-15 {
+    font-size: 15px;
+}
 .fs-16 {
     font-size: 16px;
 }
 .fs-18 {
     font-size: 18px;
+}
+.fs-22 {
+    font-size: 22px;
+}
+.fs-24 {
+    font-size: 24px;
 }
 .fs-27 {
     font-size: 27px;
@@ -48,6 +57,9 @@
     line-height: 16px;
 }
 .lh-18 {
+    line-height: 18px;
+}
+.lh-20 {
     line-height: 18px;
 }
 .lh-24 {
@@ -75,6 +87,9 @@
 .lh-60 {
     line-height: 60px;
 }
+.lh-106 {
+    line-height: 106px;
+}
 .lh-2p2 {
     line-height: 2.2;
 }
@@ -92,6 +107,9 @@
 }
 .cl-9 {
     color: #999;
+}
+.cl-c {
+    color: #ccc;
 }
 .cl-bl{
     color: #2db4ea;
@@ -184,6 +202,9 @@
 .mt-7 {
     margin-top: 7px;
 }
+.mt-8 {
+    margin-top: 8px;
+}
 .mt-10 {
     margin-top: 10px;
 }
@@ -240,6 +261,9 @@
 .pl-10 {
     padding-left: 10px;
 }
+.pr-10 {
+    padding-right: 10px;
+}
 .pd-0500 {
     padding: 5px 0;
 }
@@ -252,8 +276,14 @@
 .pd-0020 {
     padding: 0 20px;
 }
+.pd-0030{
+    padding: 0 30px;
+}
 .pd-1030 {
     padding: 10px 30px;
+}
+.pd-3040 {
+    padding : 30px 40px;
 }
 .pd-3500 {
     padding : 35px 0;
@@ -295,19 +325,28 @@
 .bc-bl-l {
     background-color: #d5f0fb;
 }
+.bc-f5 {
+    background-color: #f5f5f5;
+}
+.bc-dg {
+    background-color: #b0b0b0;
+}
 //border
 .bd-1-f5 {
     border: 1px #f5f5f5 solid;
 }
 
-.bb-1-e {
-    border-bottom: 1px #eee solid;
-}
 .bd-1-a {
     border: 1px #aaa solid;
 }
+.bb-1-dd {
+    border: 1px #dddcdc solid;
+}
 .bd-no { 
     border: none;
+}
+.bt-no{
+    border-bottom: none;
 }
 .bb-rd {
     border-radius: 100%; 
@@ -318,13 +357,16 @@
 .br-20 {
     border-radius: 20px;
 }
+.bt-1-e8 {
+    border-top: 1px #e8e8e8 solid;
+}
 .bb-1-e8 {
     border-bottom: 1px #e8e8e8 solid;
 }
-
-.bb-1-dd {
-    border: 1px #dddcdc solid;
+.bb-1-e {
+    border-bottom: 1px #eee solid;
 }
+
 .bd-1-e8 {
     border: 1px #e8e8e8 solid;
 }
@@ -347,12 +389,18 @@
 .bd-wd-1010{
     border-width: 1px 0 1px 0;
 }
+.bd-wd-1101{
+    border-width: 1px 1px 0 1px;
+}
 .bd-wd-l0 {
     border-left-width: 0;
 }
 //position
 .pr {
     position: relative;
+}
+.pa {
+    position: absolute;
 }
 
 .tp-2 {
@@ -384,6 +432,13 @@
 .wd-200p {
     width: 200%;
 }
+.wd-33p {
+    width: 33.33333333333333%;
+}
+.wd-1000p {
+    width: 1000%;
+}
+
 .wd-16{
     width: 16px;
 }
@@ -392,6 +447,9 @@
 }
 .wd-46{
     width: 46px;
+}
+.wd-56{
+    width: 56px;
 }
 .wd-70{
     width: 70px;
@@ -405,6 +463,12 @@
 .wd-90{
     width: 90px;
 }
+.wd-100p{
+    width: 100px;
+}
+.wd-110{
+    width: 110px;
+}
 .wd-113{
     width: 113px;
 }
@@ -414,14 +478,26 @@
 .wd-120{
     width: 120px;
 }
+.wd-160{
+    width: 160px;
+}
 .wd-200{
     width: 200px;
+}
+.wd-218{
+    width: 218px;
+}
+.wd-220{
+    width: 218px;
 }
 .wd-250{
     width: 250px;
 }
 .wd-266 {
     width: 266px;
+}
+.wd-300 {
+    width: 300px;
 }
 .wd-306 {
     width: 306px;
@@ -434,6 +510,9 @@
 }
 .wd-430{
     width: 430px;
+}
+.wd-450{
+    width: 450px;
 }
 .wd-485{
     width: 485px;
@@ -450,10 +529,15 @@
 .wd-720 {
     width: 720px;
 }
+.wd-930 {
+    width: 930px;
+}
+.wd-838{
+    width: 838px;
+}
 .wd-980 {
     width: 980px;
 }
-
 
 //text-align
 .ta-ct {
@@ -495,20 +579,38 @@
 .ht-50 {
     height: 50px;
 }
+.ht-60 {
+    height: 50px;
+}
 .ht-70 {
     height: 70px;
 }
 .ht-76 {
     height: 76px;
 }
+.ht-80 {
+    height: 80px;
+}
 .ht-92 {
     height: 92px;
+}
+.ht-100p{
+    height: 100px;
 }
 .ht-160{
     height: 160px;
 }
+.ht-104{
+    height: 104px;
+}
+.ht-112{
+    height: 112px;
+}
 .ht-200{
     height: 200px;
+}
+.ht-218{
+    height: 218px;
 }
 .ht-242{
     height: 242px;
@@ -521,6 +623,9 @@
 }
 .ht-600{
     height: 600px;
+}
+.ht-930{
+    height: 790px;
 }
 .ht-100 {
     height: 100%;
@@ -546,6 +651,10 @@
     border-radius: 4px;
     border: 1px #2db4ea solid;
     background-color: #2db4ea;
+    cursor: pointer;
+}
+.cp{
+    cursor: pointer;
 }
 .active {
     color: #fff;
@@ -575,3 +684,23 @@
 .scale:hover {
     transform:scale(1.1);
 }
+
+//图片属性
+.bgimg {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.op-0{
+    opacity: 0;
+}
+.btn-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
