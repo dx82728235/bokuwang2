@@ -1,5 +1,6 @@
 function Main(container){
     this.container = container;
+    this.timer = null;
     this.init();
 }
 
@@ -63,6 +64,7 @@ Main.template = `
                         </div>
                     </div>
                 </div>
+                <div class="prompt">添加购物车成功</div>
                 `;
     
 Main.prototype = {
@@ -125,6 +127,7 @@ Main.prototype = {
     },
     addCart : function(){ //加入购物车功能
         var arr = [];
+        var _this = this;
         this.el.on('click',".add-cart",function(){
             var json = {};
             json = {
@@ -157,7 +160,18 @@ Main.prototype = {
             }
             //将数组存入到cookie中
             setCookie( "shoplist" , JSON.stringify( arr ) );//cookie中存入的都是字符串
-
+            _this.promptData();
         })
+        
+    },
+    promptData : function(){//点击 加入购物车 动态添加一个提示信息 3秒后消失
+        if(this.timer){
+            clearTimeout(this.timer);
+        }
+        this.el.find('.prompt').css({display:'block'});
+        this.timer = setTimeout(function(){//1秒后删除提示信息
+            this.el.find('.prompt').css({display:'none'});
+        }.bind(this),2000);
+
     }
 }

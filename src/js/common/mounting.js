@@ -10,7 +10,7 @@ Mounting.template = `
                                 <a href="#"><img src="../../dest/img/index/logo.png" alt="logo"></a>
                             </div>
                             <div class="search">
-                                <input type="text" placeholder="黄达鑫Jerome" class="search-box"><span class="fs-27 search-pic iconfont">&#xe62b;</span>
+                                <input type="text" placeholder="Jerome Huang" class="search-box"><span class="fs-27 search-pic iconfont">&#xe62b;</span>
                                 <p class="search-info">
                                     <ul class="lh-25 fs-12" id="search-books">
                                         <li><a href="#">茅台酒收藏</a><span>|</span></li>
@@ -43,10 +43,10 @@ Mounting.prototype = {
         this.container.append(this.el); //将该模块添加到headcenter的位置上
     },
     changeSty : function(){  //当页面滚动到head以下时 通过添加class的方式 改变样式
-        this.el.find('.fix').addClass('actived');
+        this.el.find('.fix').addClass('actived'); 
         this.el.find(".logo-box img").addClass('logoFix');
         this.el.find(".shopcar-btn").addClass('cartFix');
-        this.el.find('#search-books').css({display:"none"});  
+        this.el.find('#search-books').css({display:"none"});
     },
     removeSty : function(){  //当页面滚动到head以上时 通过删除class的方式 改变样式
         this.el.find('.fix').removeClass('actived');

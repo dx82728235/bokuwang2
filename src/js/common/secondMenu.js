@@ -81,7 +81,7 @@ SecondMenu.prototype = {
                     var pro = list.conNav1;
 
                     for( var i = 0; i < pro.length; i ++ ){
-                        console.log( pro[i]) 
+                      //  console.log( pro[i]) 
                     }
                 }
             }

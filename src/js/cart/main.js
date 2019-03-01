@@ -34,8 +34,7 @@ Main.template = `
                         <tfoot>
                             <tr>
                                 <td class="pr fs-15" width="40" align="center">
-                                    <input type="checkbox" class="cp op-0 pafull-box">
-                                    <span class="iconfont cl-c">&#xe629;</span>
+                                    <input type="checkbox" class="cp pafull-box">
                                 </td>
                                 <td>全选</td>
                                 <td>
@@ -149,7 +148,6 @@ Main.prototype = {
     delBtn : function(arr){
 
         $('tbody').on('click', '.del-btn' , function(){
-            console.log( $(this).parent().parent().find('.count-box').data('id') )
 
             if( confirm("确定要删除吗？") ){
                 //确定要删除的商品id
